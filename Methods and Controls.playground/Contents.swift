@@ -25,7 +25,7 @@ namingExample(outerName: "Alan")
 
 public func counting() -> Int
 {
-    return (7 * 665)
+    return 7
 }
 print("I am not \(counting()) years old")
 
@@ -42,6 +42,7 @@ while (test < counting())
 {
     print("hahahahahah")
     test += 1
+    
 }
 
 print("YAY!!!!!")
