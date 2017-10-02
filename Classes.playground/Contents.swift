@@ -4,7 +4,7 @@ import UIKit
 
 var notesToday = "Using Swift to make classes and methods"
 
-publc class simpleClass
+public class SimpleClass
 {
     private var name :String
     
@@ -12,4 +12,41 @@ publc class simpleClass
     {
         name = "My name is....."
     }
+    public func getName() -> String
+    {
+        return name
+    }
 }
+var sample = SimpleClass()
+print(sample.getName())
+
+public class OtherClass
+{
+    private var favoriteNumber :Int
+    private var favoriteWord :String
+    
+    public init()
+    {
+        favoriteNumber = Int()
+        favoriteWord = String()
+    }
+    
+    public init(favoriteNumber: Int, favoriteWord :String)
+    {
+        self.favoriteNumber = favoriteNumber
+        self.favoriteWord = favoriteWord
+    }
+    
+    public func changeInternalState() -> Void
+    {
+        self.favoriteNumber *= 24
+        self.favoriteWord += " and more and more"
+    }
+}
+//Swift version
+var secondClass = OtherClass()
+//java ld be OtherClass sample = new OtherClass();
+//it is also not = OtherClass.init()
+var thirdSample = OtherClass(favoriteNumber: 110, favoriteWord: "Alan")
+secondClass.changeInternalState()
+thirdSample.changeInternalState()
