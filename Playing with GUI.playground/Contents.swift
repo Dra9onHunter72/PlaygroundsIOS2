@@ -2,4 +2,9 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var topic = "working with GUI :D"
+
+var myFirstButton = UIButton(frame: CGRect(x:30, y:60, width: 600, height: 120))
+
+myFirstButton.setTitle("Words", for: .normal)
+myFirstButton.backgroundColor = .green
